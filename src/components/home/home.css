@@ -1,0 +1,24 @@
+
+.banerbgimgFor{
+    
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width:cover;
+    height: 100vh;
+    background-image:url(https://res.cloudinary.com/muni/image/upload/v1712740637/Untitled_design_xl2qf1.png)
+    
+}
+.homeMainBanerHeading{
+    color:white;
+    font-family:'roboto';
+    padding-top: 2%;
+    padding-left: 2%;
+    font-size:100px;
+}
+.banerParagraph{
+    color:white;
+    padding-top: 2%;
+    padding-left: 4%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
