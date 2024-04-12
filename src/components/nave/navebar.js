@@ -1,4 +1,4 @@
-
+import React, {Component} from 'react';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -6,14 +6,14 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './navbar.css'
-function NavScrollExample() {
-  return (
+class NavScrollExample extends Component {
+ render(){ return (
 
     <Navbar expand="lg" className="navbgcostom">
       <Container fluid>
-        <Navbar.Brand class='imgNaveHeading' href="#">
+        <Navbar.Brand className='imgNaveHeading' href="#">
            
-            <img class='navIcon' src="https://res.cloudinary.com/muni/image/upload/v1712740960/Untitled_design__1_-removebg-preview_scxzns.png"></img>
+            <img className='navIcon' src="https://res.cloudinary.com/muni/image/upload/v1712740960/Untitled_design__1_-removebg-preview_scxzns.png"></img>
            FOODY
        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -23,7 +23,7 @@ function NavScrollExample() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1"><button class="naveButton">Home</button></Nav.Link>
+            <Nav.Link href="#action1"><button className="naveButton">Home</button></Nav.Link>
             <Nav.Link href="#action2">Link</Nav.Link>
             <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
@@ -54,6 +54,6 @@ function NavScrollExample() {
       </Container>
     </Navbar>
   );
-}
+}}
 
 export default NavScrollExample;
